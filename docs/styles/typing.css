@@ -44,10 +44,11 @@
           justify-content: center;
   width:auto;
   padding: 20px;
-  margin:0 auto;
-  position: absolute;
-  top: 50%;
-  left: 21%;
+    position: absolute;
+    top: 60%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+  
 }
 
 .typewriter h1{
@@ -56,3 +57,10 @@
   text-shadow: 2px 6px 6px #333;
   padding:2px;
 }
+
+
+#banner{
+  position: relative;
+  z-index: 5;
+}
+
