@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset="utf-8">
+    <title>Chiedozienwaoha | Designer</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="styles/typing.css" type="text/css" media="all">
+
+  </head>
+  <body>
+    <header>
+    <a href="index.html" id="logo">
+      <h1>apparel x</h1>
+      <h2>Designer</h2>
+    </a>
+      <nav>
+        <ul id="pages">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+          <li><a href="Product.html">Product</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div>
+        <h2 class="text-center" style="font-weight: 700; color: #d50000; text-align: center; font-size: 30px;"> CONTACT US</h2>
+      </div>
+        <div>
+          <form name="myForm"  onsubmit="return !!(validateForm() & guardarNumeros());" method="post" id="myForm">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+               <textarea id="text-content">Leave a message...</textarea>
+            <input type="submit" value="Submit" onclick="myFunction()">
+          </form>
+        </div>
+    </div>
+  </section>
+  <div>
+    <p id="demo"></p>
+  </div>
+    <footer>
+        <div>
+          <div>
+            <a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+          </div>
+        <p>&copy; 2018 COPYRIGHT</p>
+        </div>
+      </footer>
+  </body>
+  <script type="text/javascript" src="JS/index.js"></script>
+  <script type="text/javascript" src="JS/array.js"></script>
+</html>
+
