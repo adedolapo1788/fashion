@@ -10,3 +10,15 @@ function validateForm() {
     return false;
   }
 }
+
+
+// burger menu
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

@@ -2,77 +2,83 @@
 <html>
 	<head>
 		<meta  charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Chiedozienwaoha | Designer</title>
 		<link rel="stylesheet" href="styles/main.css" type="text/css" media="all">
 		<link rel="stylesheet" href="styles/typing.css" type="text/css" media="all">
 
 	</head>
 	<body>
-		<header>
-		<a href="index.html" id="logo">
-			<h1>Apparel X</h1>
-			<h2>Designer</h2>
-		</a>
-			<nav>
-				<ul id="pages">
-					<li><a href="index.html" class="active">HOME</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="#">Product</a></li>
-				</ul>
-			</nav>
+		<header class="header" id="myHeader">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="product.html">Product</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+      </div>
 		</header>
-		<div id="banner" class="responsive">
-			 <div id="relative">
-					<img src="img/fashion.jpg" alt="" class="responsive banner-Image">
-			</div>
-			<div class="typewriter typing responsive">
-  				<h1> FASHION JUST DO IT!!</h1>
-			</div>	
-		</div>
-		<div id="wrapper">
-			<section class="body-header">
-				<h1>WELCOME</h1>
-			</section>
-			<section>
-				<ul id="gallery">
-					<div class="row">
-						<li>
-						<img src="img/fashion2.jpeg" alt="" class="responsive">
-						<p class="picture-text">Cool</p>
-					</li>
-					<li>
-						<div class="responsive">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu nunc non leo blandit commodo. Nulla vitae enim at metus blandit fermentum. Donec tincidunt purus diam. Pellentesque a varius odio, sit amet semper nulla. Sed mattis libero id ipsum pellentesque pharetra. Nullam vulputate nisi nec neque condimentum dignissim quis eget ante. Nunc lectus tellus, facilisis et quam vel, sagittis porttitor diam. Quisque tempor pretium urna, a rutrum turpis. Quisque bibendum, nibh vitae ullamcorper gravida, ligula velit venenatis sapien, eu sodales massa quam a justo. Praesent tincidunt sollicitudin elit, ut accumsan tellus cursus et.</p>
-						</div>
-						<p class="picture-text">Nice</p>
-					</li>
-					</div>
-					<!-- -------------------row 2---------- -->
-					<div class="row">
-						<li>
-						<img src="img/female1.jpeg" alt="" class="responsive">
-						<p class="picture-text">Fresh</p>
-					</li>
-					<li>
-						<div class="responsive">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu nunc non leo blandit commodo. Nulla vitae enim at metus blandit fermentum. Donec tincidunt purus diam. Pellentesque a varius odio, sit amet semper nulla. Sed mattis libero id ipsum pellentesque pharetra. Nullam vulputate nisi nec neque condimentum dignissim quis eget ante. Nunc lectus tellus, facilisis et quam vel, sagittis porttitor diam. Quisque tempor pretium urna, a rutrum turpis. Quisque bibendum, nibh vitae ullamcorper gravida, ligula velit venenatis sapien, eu sodales massa quam a justo. Praesent tincidunt sollicitudin elit, ut accumsan tellus cursus et.
-							</p>
-						</div>
-						<p class="picture-text">Awesome</p>
-					</li>
-					</div>
-					<div class="content">
-					<div class="body-header">
-						<h1>Shop With us</h1>
-					</div>
-					<div class="responsive">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu nunc non leo blandit commodo. Nulla vitae enim at metus blandit fermentum. Donec tincidunt purus diam. Pellentesque a varius odio, sit amet semper nulla. Sed mattis libero id ipsum pellentesque pharetra. Nullam vulputate nisi nec neque condimentum dignissim quis eget ante. Nunc lectus tellus, facilisis et quam vel,</p>
-					</div>
-			</div>
-		</div>
-			</section>
+
+    <div class="row">
+      <!-- -----------------------------SECTION ONE --------------------->
+
+
+
+    <div class="col-6 col-s-12">
+       <div>
+          <img src="img/woman-clothes-shopping.jpg" alt="" class="responsive" style="border-radius:1%;">
+      </div>  
+    </div>
+
+    <!-- --------------------------SECTION 2------------------- -->
+    <div class=" col-6 col-s-12">
+        <form class="homePageForm">
+          <div class="form-header">
+            <h3 class="Sweater">H&M + Knit Sweater</h3>
+            <p class="price">$19.99 <em class="price-sub">$29.99</em></p>
+          </div>
+
+      <div>
+        <label>Dark Blue</label><br>
+        <img src="img/demim.jpg" style="width:10%;">
+      </div>
+      <div>
+            <select id="country" name="country">
+              <option value="australia">Select Size</option>
+              <option value="canada">45</option>
+              <option value="usa">42</option>
+              <option value="usa">34</option>
+              <option value="usa">30</option>
+            </select>
+            <input type="submit" value="ADD">
+            <div class="col-6 col-s-6" style="text-align: center;">
+              <img src="img/ship.png" class="social-icon">
+              <br/>
+              <label class="formPricing">Free Shipping over $40</label>
+            </div>
+            <div class="col-6 col-s-6" style="text-align: center;">
+              <img src="img/buy.png" class="social-icon">
+              <br/>
+              <label class="formPricing">Buy now</label>
+            </div>
+        </form>
+      </div>
+    </div>   
+    </div>
+
+
+<!-- -------------------------SECTION 3-------------- -->
+    <div class="section-three">
+            <div class="body-header">
+            <h1>Shop With Us</h1>
+          </div>
+          <div class="responsive section-three-content">
+            <p>Examine she brother prudent add day ham. Far stairs now coming bed oppose hunted become his. You zealously departure had procuring suspicion. Books whose front would purse if be do decay. Quitting you way formerly disposed perceive ladyship are. Common turned boy direct and yet.</p>
+          </div>
+    </div>
+
 		<footer>
 				<div>
 					<div>
@@ -82,6 +88,7 @@
 				<p>&copy; 2018 COPYRIGHT</p>
 				</div>
 			</footer>
+      <script type="text/javascript" src="JS/index.js"></script>
 	</body>
 </html>
 
