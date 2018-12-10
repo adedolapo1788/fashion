@@ -129,6 +129,7 @@ a{
     padding:1px 4px 1px 4px;
    
   }
+
   
  
 }
@@ -159,18 +160,7 @@ a{
     width: 100%;
     text-align:left;
   }
-}
 
-
-
-
-
-/*************** fashiom****************/
-#pages{
-  list-style: none;
-  margin:0 10px;
-  padding:0;
-  
 }
 
 
@@ -186,10 +176,7 @@ a{
   padding:auto;
   padding: auto;
 }
-.formPricing{
-  font-size: 14px;
-  color: #545454;
-}
+
 .responsive{
   width:100%;
   height: auto;
@@ -202,20 +189,7 @@ a{
 .row {
   padding: 2%;
 }
-.Sweater{
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
 
-.price{
-  margin-top: 0;
-  padding-top: 0;
-  color:#d50000;
-}
-.price-sub{
-  color:#333;
-  text-decoration: line-through;
-}
 
 
 /***********************8section 3***********************/
@@ -243,39 +217,7 @@ a{
   font-size: 15px;
 }
 
-
-
-
-
-
-/**********************index page*************************/
-.img-gutter-one{
-  display: block;
-  margin-right: 45px; 
-  margin-left: 45px;
-}
-.img-gutter-two{
-  display: block;
-  margin-right: 45px;
-  margin-left: 45px;
-}
-.photo{
-  margin-top: 25px;
-}
-.gutter-generic{
-  margin-right: 1.3%; 
-  width:48.5%;"
-
-}
-.img-gutter-one-position{
-  position: relative;
-}
-
-
-
-
-
-/***************About Page *******************/
+/***************About Page********************************** *******************/
 .about ul li{
   list-style: none;
 }
@@ -287,7 +229,7 @@ a{
   color:#333;
 }
 
-/***************************************************/
+/****************************FOOTER***************************************/
 
 
 
@@ -324,6 +266,7 @@ form {
   padding: 20px;
   margin-top: 25px;
   margin-bottom: 35px;
+  color: #333;
 
 }
 
@@ -381,7 +324,7 @@ textarea {
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #eee;
+  border: 2px solid #333;
   border-radius: 4px;
   background-color: inherit;
   font-size: 16px;
@@ -427,23 +370,12 @@ section.example::after {
 }
 
 
-/***************************************demo text styling********************************/
- #demo{
-  color: red;
-  text-align: center;
-  font-size: 18px;
-  padding: 25px;
- }
+ /*******************************************product**************/
 
-
-
-
-
-
-
-
-
-
+.product{
+  margin-left: 10px;
+  margin-top: 20px;
+}
 
 
 
@@ -452,6 +384,7 @@ section.example::after {
  /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -477,7 +410,7 @@ section.example::after {
     padding-right:15px;
   }
   .example{
-    margin-right:15px;
+    margin-right:23px;
   }
 
   
@@ -528,6 +461,106 @@ section.example::after {
   section.example button{
     margin-right:15px;
   }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 9px;
+    padding:0 10px 0 10px;
+  }
+  .grid-container > div{
+    /*background-color: rgba(255,255,255,.8);*/
+    padding: 0 0;
+    font-size: 30px;
+  }
+  .item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .container{
+      position: relative;
+      text-align: center;
+      color: #fff;
+    }
+    .centered{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .bottom-right{
+      position: absolute;
+      bottom: 15px;
+      right: 16px;
+    }
+
+    .buy{
+  background-color: #FFC901;
+  padding:4px 4px 4px 4px;
+  border:none;
+  border-radius: 2px;
+  color: #333;
+  font-size: 12px;
+}
+ .centered{
+      position: absolute;
+      top:80%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .buy-banner{
+      font-size: 18px;
+      padding:7px 18px 7px 18px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1280px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding:0 40px 0 40px;
+  }
+  .grid-container > div{
+    /*background-color: rgba(255,255,255,.8);*/
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  /****************************Buy Now Styling**************************/
+  .container{
+      position: relative;
+      text-align: center;
+      color: #fff;
+    }
+    .centered{
+      position: absolute;
+      top:80%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .bottom-right{
+      position: absolute;
+      bottom: 70px;
+      right: 20px;
+    }
+    .buy{
+      background-color: #FFC901;
+      padding:4px 6px 4px 6px;
+      border:none;
+      border-radius: 2px;
+      color: #333;
+      font-size: 18px;
+    }
+    .buy-banner{
+      font-size: 24px;
+      padding:10px 30px 10px 30px;
+    }
 }
 
 
