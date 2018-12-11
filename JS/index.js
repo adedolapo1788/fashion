@@ -1,6 +1,9 @@
+
+
+
 function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
+  var P = document.forms["myForm"]["fname"].value;
+  if (P == "") {
     alert("Name must be filled out");
     return false;
   }
@@ -9,8 +12,18 @@ function validateForm() {
     alert("Name must be filled out");
     return false;
   }
+  if (!/^[a-zA-Z]*$/g.test(document.myForm.fname.value)) {
+        alert("Invalid characters");
+        document.myForm.name.focus();
+        return false;
+    }
+    if (!/^[a-zA-Z]*$/g.test(document.myForm.lname.value)) {
+        alert("Invalid characters");
+        document.myForm.name.focus();
+        return false;
+    }
+  
 }
-
 
 // burger menu
 

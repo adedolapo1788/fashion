@@ -12,7 +12,7 @@ function guardarNumeros() {
 }
 
 //  turning array elements into string for displaying
-function myFunction() {
+function mySubmit() {
     items.toString();
     document.getElementById("demo").innerHTML = items;
 

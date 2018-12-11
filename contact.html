@@ -12,7 +12,10 @@
   </head>
   <body>
     <header class="header" id="myHeader">
-       <a href="index.html"><img src="img/logo.png" class="logo"></a>
+      <section class="example">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Search.." name="search">
+      </section>
       <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
         <a href="product.html">Product</a>
@@ -21,11 +24,6 @@
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </header>
-     <section class="example">
-        <button type="submit"><i class="fa fa-search"></i></button>
-        <input type="text" placeholder="Search.." name="search">
-      </section>
-
   <div class="container">
       <div>
         <h2 class="text-center" style="font-weight: 700; color: #d50000; text-align: center; font-size: 30px;"> CONTACT US</h2>
@@ -44,7 +42,7 @@
               <option value="usa">USA</option>
             </select>
                <textarea id="text-content">Leave a message...</textarea>
-            <input type="submit" value="Submit" onclick="myFunction()">
+            <input type="submit" value="Submit" onclick="mySubmit()">
           </form>
         </div>
     </div>
@@ -63,6 +61,7 @@
         </div>
       </footer>
       <script type="text/javascript" src="JS/index.js"></script>
+      <script type="text/javascript" src="Js/array.js"></script>
   </body>
 </html>
 
